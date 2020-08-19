@@ -27,7 +27,7 @@ Expect: (pigLatin("a")).toEqual("away");
 Test: "It will move the first consecutive consonants to the end of input words and add 'ay' to the end"
 Expect: (pigLatin("Pig")).toEqual("igPay");
 
-Test: "It will move the letters 'q' and 'u' to the end of words that begin with 'qu', but ignore this rule if another consonant is encountered first"
+Test: "It will move the letters 'q' and 'u' to the end of words that begin with 'qu'"
 Expect: (pigLatin("Quest")).toEqual("estQuay");
 
 Test: "It will treat the letter 'y' as a consonant for words that begin with 'y', ignore this rule otherwise"
