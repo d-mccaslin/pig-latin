@@ -9,10 +9,6 @@ $(document).ready(function(){
 
 });
 
-function pigLatinWithRegex(string) {
-  //return newString = string.replace(/[aeiou]/i,"x");
-}
-
 //Business Logic
 function pigLatin(string) {
   const vowels = ["a", "e", "i", "o", "u"];
@@ -37,4 +33,10 @@ function pigLatin(string) {
       return string;
     }
 }
+
+/*
+function pigLatinWithRegex(string) {
+  //return newString = string.replace(/[aeiou]/i,"x");
+}
+*/
 
