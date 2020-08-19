@@ -4,7 +4,6 @@ $(document).ready(function(){
     event.preventDefault();
     const userInput = $("#userPhrase").val();
     console.log(pigLatin(userInput));
-    //console.log(pigLatin(userInput));
   });
 
 });
