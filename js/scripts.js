@@ -15,7 +15,15 @@ function vowelSearch(string) {
   if (vowels.indexOf(string[0]) > -1) {
     return string = string + "way";
   } else {
-    
+      for (let i = 0; i < string.length; i++) {
+        if (vowels.indexOf(string[i]) > -1) {
+          let consonants = string.slice(0, i);
+          let newString = string.slice(i, string.length);
+          string = newString + consonants + "ay";
+          break;
+        }
+      return string;
+      }
   }
 }
 
