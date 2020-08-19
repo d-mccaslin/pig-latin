@@ -3,6 +3,7 @@ $(document).ready(function(){
   $("#input").submit(function(event){
     event.preventDefault();
     const userInput = $("#userPhrase").val();
+    console.log(vowelSearch(userInput));
   });
 
 });
@@ -21,12 +22,24 @@ function vowelSearch(string) {
           let newString = string.slice(i, string.length);
           string = newString + consonants + "ay";
           break;
+          }
         }
       return string;
       }
   }
-}
 
+
+            //if ((string.charAt(i) === "u") && (string.charAt(i-1) === "q")) {
+            //else {
+            //   let consonants = string.slice(0, i);
+            //   let newString = string.slice(i, string.length);
+            //   string = newString + consonants + "ay";
+            //   break;
+
+
+
+
+/*
 function consonantSearch(string) {
   const vowels = ["a", "e", "i", "o", "u"];
   const consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"];
@@ -42,8 +55,7 @@ function consonantSearch(string) {
         break;
       }
     return string = string + target + "ay";
-  }
+  } */
 
 
-}
 
